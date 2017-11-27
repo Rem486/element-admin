@@ -1,0 +1,81 @@
+//常用字体
+.fs12{
+    font-size: 12px;
+}
+
+.fs14{
+    font-size: 14px;
+}
+
+.fs16{
+    font-size: 16px;
+    @media(max-height: 768px){
+        font-size: 14px;
+    }
+}
+
+.fs18{
+    font-size: 18px;
+}
+
+.fs20{
+    font-size: 20px;
+}
+
+//extend
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix{
+    &:before,
+    &:after{
+        content: "";
+        display: table;
+        font: 0/0 a;
+    }
+    &:after{
+        clear: both;
+    }
+}
+
+//
+@for $i from 1 through 8{
+    .mt#{$i*5}{
+        margin-top: $i*5px;
+    }
+}
+
+@for $i from 1 through 8{
+    .mb#{$i*5}{
+        margin-bottom: $i*5px;
+    }
+}
+
+@for $i from 1 through 8{
+    .mr#{$i*5}{
+        margin-right: $i*5px;
+    }
+}
+
+@for $i from 1 through 8{
+    .ml#{$i*5}{
+        margin-left: $i*5px;
+    }
+}
+
+@for $i from 1 through 4{
+    .pr#{$i*5}{
+        padding-right: $i*5px;
+    }
+}
+
+@for $i from 1 through 4{
+    .pl#{$i*5}{
+        padding-left: $i*5px;
+    }
+}
